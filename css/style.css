@@ -2,6 +2,19 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-size: 1.30vmin;
 }
+header{
+    color: black;
+}
+a{
+    color: #000;
+}
+a:hover{
+    color: #000;
+}
+
+.nav__text-decoration-line:hover{
+    text-decoration: underline 4px black;
+}
 .one_img{
     background-image: url(../img/190H.png);
     background-size: 100% 100%;
@@ -12,6 +25,7 @@ body{
     background-image: url(../img/Banner.png);
     background-size: 100% 100%;
     background-attachment: local;
+    text-shadow: 0 0 20px rgba(48, 48, 48, 0.7);
 }
 .container__background_img{
     background-image: url(../img/zk2asdasd.png);
@@ -69,10 +83,12 @@ background-repeat: no-repeat;
 .font-size_600_pers{
     font-size: 600%;
 }
-
 .font-size_53px{
      font-size: 53px;
     }
+    .font-size_43px{
+        font-size: 43px;
+       }
 .font-size_35px{
      font-size: 35px;
     }
@@ -94,10 +110,23 @@ background-repeat: no-repeat;
 }
 
 
-.vertext{
-    transform-origin: right;
-    transform: rotate(90deg);
-    padding-left: 100px;
-    float: right;
-
+.article1__text_rotate_90_deg::after{
+    content:url(../img/014__circle_arrow_down_1.png) " Enjoy for Pleasure"; 
+    transform-origin:left 50px;
+    transform: rotate(270deg);
+    position: absolute;
+    margin-top: 370px;
+    font-size: 18px;
 }
+
+.article2__text_rotate_90_deg::after{
+    content: "FREE PSD TEMPLATE AVAILABLE OD SYMU.COM"; 
+    text-align: end;
+    transform-origin:right 20px;
+    transform: rotate(90deg);
+    position: absolute;
+    margin-top: 90%;
+    font-size: 14px;
+}
+
+
